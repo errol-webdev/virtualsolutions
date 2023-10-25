@@ -8,6 +8,22 @@
 
     <link rel="icon" href="favicon.ico" />
     <link href="css/style.css" rel="stylesheet" />
+
+    <script
+      defer=""
+      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      data-cf-beacon='{" rayid":"81b6fa6c0b2066ec","version":"2023.10.0","r":1,"token":"9a6015d415bb4773a0bff22543062d3b","b":1}"="'
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("OKyA59ccCN7V7Iyxc");
+      })();
+    </script>
   </head>
   <body
     x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
@@ -1029,7 +1045,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
               </div>
             </div>
             <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
-              <form>
+              <form
+                action="https://formsubmit.co/errol.principe.tech@gmail.com"
+                method="POST"
+              >
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
                     <label class="rc ac" for="fullname">Full name</label>
@@ -1428,25 +1447,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
       }
     </script>
     <!-- <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe> -->
-    <script
-      defer=""
-      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
-      data-cf-beacon='{" rayid":"81b6fa6c0b2066ec","version":"2023.10.0","r":1,"token":"9a6015d415bb4773a0bff22543062d3b","b":1}"="'
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "errol.principe.tech@gmail.com",
-          Password: "B78285C9EE27AC7A762FD40D1B9E7E50A884",
-          To: "errol.principe.tech@gmail.com",
-          From: "errol.principe.tech@gmail.com",
-          Subject: "This is the subject",
-          Body: "And this is the body",
-        }).then((message) => alert("Successfully sent"));
-      }
-    </script>
   </body>
 </html>
