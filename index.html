@@ -19,6 +19,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript">
       (function () {
         emailjs.init("OKyA59ccCN7V7Iyxc");
@@ -1045,17 +1046,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
               </div>
             </div>
             <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
-              <form
-                action="https://formsubmit.co/errol.principe.tech@gmail.com"
-                method="POST"
-              >
+              <form onsubmit="sendEmail(); return false;">
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
                     <label class="rc ac" for="fullname">Full name</label>
                     <input
                       type="text"
                       name="fullname"
-                      id="fullname"
+                      id="name"
                       placeholder="Devid Wonder"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
@@ -1068,6 +1066,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
                       id="email"
                       placeholder="example@gmail.com"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
+                      required
                     />
                   </div>
                 </div>
@@ -1077,7 +1076,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
                     <input
                       type="text"
                       name="phone"
-                      id="phone"
+                      id="contact"
                       placeholder="+009 3342 3432"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
@@ -1441,6 +1440,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
               }
           };
         }
+      }
+    </script>
+
+    <script>
+      function sendEmail() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let contact = document.getElementById("contact").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+        let body;
+
+        body = "Name : " + name + "<br/>";
+        body += "email : " + email + "<br/>";
+        body += "contact : " + contact + "<br/>";
+        body += "subject : " + subject + "<br/>";
+        body += "message : " + message + "<br/>";
+
+        Email.send({
+          SecureToken: "960ba238-0479-4b68-b2d2-38be17cd893d",
+          To: "errol.principe.tech@gmail.com",
+          From: "errol.emailservice@gmail.com",
+          Subject: "This is the subject",
+          Body: body,
+        }).then((message) => alert("Email successfully sent! Thank you!"));
       }
     </script>
     <!-- <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe> -->
