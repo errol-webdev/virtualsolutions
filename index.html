@@ -676,8 +676,13 @@ Pages
                     class="sc ak kk wm"
                   ></span>
                 </div>
-                <p class="ur dc">No credit card required</p>
+                <!-- <p class="ur dc">No credit card required</p> -->
 
+                <ul class="tc sf bg ob fb">
+                  <template x-for="(feature, i) in plan.features" x-key="i">
+                    <li x-text="feature"></li>
+                  </template>
+                </ul>
                 <a
                   href="#"
                   class="ek rg lk ml il gi ri"
@@ -685,12 +690,6 @@ Pages
                 >
                   Schedule a Meeting
                 </a>
-
-                <ul class="tc sf bg ob fb">
-                  <template x-for="(feature, i) in plan.features" x-key="i">
-                    <li x-text="feature"></li>
-                  </template>
-                </ul>
                 <!-- <p class="kk wm">7-day free trial</p> -->
               </div>
             </template>
@@ -1051,7 +1050,7 @@ Ecommerce
                       type="text"
                       name="fullname"
                       id="name"
-                      placeholder="Devid Wonder"
+                      placeholder="Type your full name"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
                   </div>
@@ -1390,8 +1389,8 @@ Ecommerce
             {
               name: "Prospecting",
               price: {
-                monthly: 139,
-                annually: 139 * 12 - 100,
+                monthly: 15,
+                annually: 15 * 8,
               },
               features: [
                 "Social Media",
@@ -1403,14 +1402,27 @@ Ecommerce
             {
               name: "CRM Support",
               price: {
-                monthly: 139,
-                annually: 139 * 12 - 100,
+                monthly: 15,
+                annually: 15 * 8,
               },
               features: [
                 "Database Management",
                 "Email Drip Campaigns",
                 "Database Clean Up",
                 "Lead Nurturing",
+              ],
+            },
+            {
+              name: "Design Services",
+              price: {
+                monthly: 20,
+                annually: 20 * 8,
+              },
+              features: [
+                "Canva",
+                "Adobe Creative Suite",
+                "Video/Audio Editing",
+                "Graphic Designs",
               ],
             },
           ],
