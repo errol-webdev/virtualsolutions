@@ -89,8 +89,12 @@
                 >
               </li>
               <!-- <li><a href="index.html#features" class="xl">Features</a></li> -->
+
+              <li>
+                <a href="index.html#testimonial" class="xl">Testimonials</a>
+              </li>
               <li><a href="index.html#pricing" class="xl">Pricing</a></li>
-              <li><a href="index.html#support" class="xl">Contact us</a></li>
+              <li><a href="index.html#support" class="xl">Contact</a></li>
               <li class="c i" x-data="{ dropdown: false }">
                 <!-- <a href="#" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown" :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
 Pages
@@ -176,17 +180,17 @@ Pages
                 <img class="xc nm" src="images/icon-moon.svg" alt="Moon" />
               </label>
             </div>
-            <a
+            <!-- <a
               href="signin.html"
               :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' &amp;&amp; stickyMenu }"
               class="ek pk xl"
               >Sign In</a
-            >
+            > -->
             <a
               href="signup.html"
               :class="{ 'hh/[0.15]' : page === 'home', 'sh' : page === 'home' &amp;&amp; stickyMenu }"
               class="lk gh dk rg tc wf xf _l gi hi"
-              >Sign Up</a
+              >Book Now</a
             >
           </div>
         </div>
@@ -460,7 +464,7 @@ Pages
 
       <section class="lj tp kr">
         <div
-          x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
+          x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `Below are categories of services we provide for our clients. We have extensive experience in these areas but are not limited to them. If a service isn’t listed below there’s a great chance we can still provide it. Setup an appointment to learn more.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
             <h2
@@ -475,70 +479,161 @@ Pages
           <div class="wc qf pn xo ng">
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-04.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Crafted for Startups</h4>
+              <h4 class="ek zj kk wm nb _b">Voice Service</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor.
+                Inbound Call Screening, Appointment Scheduling, Inbound
+                Support/Customer Service, Internal & External Appointment
+                Reminders
               </p>
             </div>
 
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">High-quality Design</h4>
+              <h4 class="ek zj kk wm nb _b">Administrative Task</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor.
+                CRM Management, Data Transcription, Document Review, Microsoft
+                Office Suite Tasks, Calendar Management, Executive Assistant
+                Tasks
               </p>
             </div>
 
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">All Essential Sections</h4>
+              <h4 class="ek zj kk wm nb _b">Online Research</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor.
-              </p>
-            </div>
-
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-07.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Speed Optimized</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor.
-              </p>
-            </div>
-
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Fully Customizable</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor.
-              </p>
-            </div>
-
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Regular Updates</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor.
+                Data Research, Lead Verification, Lead List Development,
+                Competition Analysis, Travel Arrangement Assistance
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      <section id="testimonial" class="hj rp hr">
+        <div
+          x-data="{ sectionTitle: `Client’s Testimonials`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+          </div>
+        </div>
+
+        <div class="bb ze ki xn ar">
+          <div class="animate_top jb cq">
+            <div class="swiper testimonial-01">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimonial2.jpg"
+                        alt="User"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          I've been working with AE-VirtualSolutions for the
+                          past year, and I couldn't be happier with the support
+                          they provide. Their virtual assistants have been
+                          instrumental in managing my CRM, scheduling
+                          appointments, and handling customer service inquiries.
+                          The team is responsive, professional, and efficient.
+                          They've truly helped me streamline my business
+                          operations and focus on what I do best. I highly
+                          recommend AE-VirtualSolutions to anyone in need of
+                          reliable virtual assistant services.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb">Ava Davis</span>
+                            <span class="rc">Dentist</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img class="bf" src="images/testimonial.png" alt="User" />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          AE-VirtualSolutions has been a game-changer for my
+                          small business. Their virtual assistants are experts
+                          at managing email, generating leads, and prospecting
+                          new clients. The level of service and attention to
+                          detail is exceptional. I no longer worry about missed
+                          opportunities or being buried in administrative tasks.
+                          I can confidently say that AE-VirtualSolutions has
+                          helped me grow my business by freeing up my time to
+                          focus on business development. It's a fantastic
+                          service that I can't recommend enough.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb">Ethan Johnson</span>
+                            <span class="rc">CEO @ Johnson's Construction</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="i hh rm sg vk xm bi qj">
+                    <div class="tc sf rn tn un zf dp">
+                      <img
+                        class="bf"
+                        src="images/testimonial3.jpg"
+                        alt="User"
+                      />
+                      <div>
+                        <img src="images/icon-quote.svg" alt="Quote" />
+                        <p class="ek ik xj _p kc fb">
+                          AE-VirtualSolutions has completely transformed the way
+                          I handle customer service and calls in my business.
+                          Their virtual assistants are courteous, professional,
+                          and highly responsive. I've also entrusted them with
+                          the critical task of CRM management, and they've
+                          exceeded my expectations. Their ability to schedule
+                          appointments efficiently has saved me a ton of time.
+                          The email management service is top-notch, and their
+                          leads generation and prospecting efforts have resulted
+                          in valuable leads for my business. AE-VirtualSolutions
+                          is an indispensable partner in my business journey,
+                          and I'm grateful for their support.
+                        </p>
+                        <div class="tc yf vf">
+                          <div>
+                            <span class="rc ek xj kk wm zb">Emily Grace</span>
+                            <span class="rc"
+                              >Head of Human Resource @ CreativeScape
+                              Studios</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="pricing" x-data="setup()" class="i pg fh rm ji gp uq">
-        <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
+        <!-- <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
         <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
         <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
         <img src="images/shape-12.svg" alt="Shape" class="h p s" />
-        <img src="images/shape-13.svg" alt="Shape" class="h r q" />
+        <img src="images/shape-13.svg" alt="Shape" class="h r q" /> -->
 
         <div
-          x-data="{ sectionTitle: `Plans and Prices.`, sectionTitleText: `Our standard contract duration is three months, and after this initial period, you have the flexibility to continue the service on a month-to-month basis.`}"
+          x-data="{ sectionTitle: `Plans and Prices.`, sectionTitleText: `Our standard contract duration is 3 months, and after this initial period, you have the flexibility to continue the service on a month-to-month basis.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
             <h2
@@ -550,7 +645,7 @@ Pages
         </div>
 
         <div class="tc wf xf jb og">
-          <span class="ek kk wm">Bill Monthly</span>
+          <span class="ek kk wm">Hourly</span>
           <button
             class="i rg gm"
             x-cloak=""
@@ -562,7 +657,7 @@ Pages
               :class="{ 'ff': billPlan == 'monthly', 'gf': billPlan == 'annually' }"
             ></div>
           </button>
-          <span class="ek kk wm">Bill Annually</span>
+          <span class="ek kk wm">Daily</span>
         </div>
 
         <div class="bb ze i va ki xn yq bc">
@@ -577,7 +672,7 @@ Pages
                     class="fk _j kk wm"
                   ></h2>
                   <span
-                    x-text="billPlan == 'monthly' ? '/per month' : '/per year'"
+                    x-text="billPlan == 'monthly' ? '/per hour' : '/per day'"
                     class="sc ak kk wm"
                   ></span>
                 </div>
@@ -596,7 +691,7 @@ Pages
                     <li x-text="feature"></li>
                   </template>
                 </ul>
-                <p class="kk wm">7-day free trial</p>
+                <!-- <p class="kk wm">7-day free trial</p> -->
               </div>
             </template>
           </div>
@@ -696,66 +791,7 @@ Ecommerce
 </div>
 </section> -->
 
-      <!-- <section class="hj rp hr">
-
-<div x-data="{ sectionTitle: `Client’s Testimonials`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}">
-<div class="animate_top bb ze rj ki xn vq">
-<h2 x-text="sectionTitle" class="fk vj pr kk wm on/5 gq/2 bb _b">
-</h2>
-<p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
-</div>
-
-<div class="bb ze ki xn ar">
-<div class="animate_top jb cq">
-
-<div class="swiper testimonial-01">
-
-<div class="swiper-wrapper">
-
-<div class="swiper-slide">
-<div class="i hh rm sg vk xm bi qj">
-
-<span class="rc je md/2 gh xg h q r"></span>
-<span class="rc je md/2 mh yg h q p"></span>
-<div class="tc sf rn tn un zf dp">
-<img class="bf" src="images/testimonial.png" alt="User">
-<div>
-<img src="images/icon-quote.svg" alt="Quote">
-<p class="ek ik xj _p kc fb">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.
-</p>
-<div class="tc yf vf">
-<div>
-<span class="rc ek xj kk wm zb">Devid Smith</span>
-<span class="rc">Founter @democompany</span>
-</div>
-<img class="rk" src="images/brand-light-02.svg" alt="Brand">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="tc wf xf fg jb">
-<div class="swiper-button-prev c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym">
-<svg class="th lm" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.52366 7.83336L7.99366 12.3034L6.81533 13.4817L0.333663 7.00002L6.81533 0.518357L7.99366 1.69669L3.52366 6.16669L13.667 6.16669L13.667 7.83336L3.52366 7.83336Z" fill=""></path>
-</svg>
-</div>
-<div class="swiper-button-next c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym">
-<svg class="th lm" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z" fill=""></path>
-</svg>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section> -->
-
-      <section class="i pg qh rm ji hp">
+      <!-- <section class="i pg qh rm ji hp">
         <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
         <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
         <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
@@ -763,7 +799,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
         <div class="bb ze i va ki xn br">
           <div class="tc uf sn tn xf un gg">
             <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">785</h2>
+              <h2 class="gk vj zp or kk wm hc">229</h2>
               <p class="ek bk aq">Global Brands</p>
             </div>
             <div class="animate_top me/5 ln rj">
@@ -771,16 +807,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
               <p class="ek bk aq">Happy Clients</p>
             </div>
             <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">865</h2>
+              <h2 class="gk vj zp or kk wm hc">13</h2>
               <p class="ek bk aq">Winning Award</p>
-            </div>
-            <div class="animate_top me/5 ln rj">
-              <h2 class="gk vj zp or kk wm hc">346</h2>
-              <p class="ek bk aq">Happy Clients</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- <section class="pj vp mr">
 
@@ -994,50 +1026,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
                   <li>
                     <a href="#" class="c tc wf xf ie ld rg ml il tl">
                       <svg
-                        class="th lm ml il"
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
                         width="20"
-                        height="16"
-                        viewBox="0 0 20 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        viewBox="0 0 50 50"
                       >
                         <path
-                          d="M19.3153 2.18484C18.6155 2.4944 17.8733 2.6977 17.1134 2.78801C17.9144 2.30899 18.5138 1.55511 18.8001 0.666844C18.0484 1.11418 17.2244 1.42768 16.3654 1.59726C15.7885 0.979958 15.0238 0.57056 14.1901 0.432713C13.3565 0.294866 12.5007 0.436294 11.7558 0.835009C11.0108 1.23372 10.4185 1.86739 10.0708 2.63749C9.72313 3.40759 9.63963 4.27098 9.83327 5.09343C8.30896 5.01703 6.81775 4.62091 5.45645 3.93079C4.09516 3.24067 2.89423 2.27197 1.93161 1.08759C1.59088 1.67284 1.41182 2.33814 1.41278 3.01534C1.41278 4.34451 2.08928 5.51876 3.11778 6.20626C2.50912 6.1871 1.91386 6.02273 1.38161 5.72685V5.77451C1.38179 6.65974 1.68811 7.51766 2.24864 8.20282C2.80916 8.88797 3.58938 9.3582 4.45703 9.53376C3.89201 9.68688 3.29956 9.70945 2.72453 9.59976C2.96915 10.3617 3.44595 11.0281 4.08815 11.5056C4.73035 11.9831 5.50581 12.2478 6.30594 12.2627C5.51072 12.8872 4.60019 13.3489 3.62642 13.6213C2.65264 13.8938 1.63473 13.9716 0.630859 13.8503C2.38325 14.9773 4.4232 15.5756 6.50669 15.5737C13.5586 15.5737 17.415 9.73176 17.415 4.66535C17.415 4.50035 17.4104 4.33351 17.4031 4.17035C18.1537 3.62783 18.8016 2.95578 19.3162 2.18576L19.3153 2.18484Z"
-                          fill=""
-                        ></path>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="c tc wf xf ie ld rg ml il tl">
-                      <svg
-                        class="th lm ml il"
-                        width="19"
-                        height="18"
-                        viewBox="0 0 19 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4.36198 2.58327C4.36174 3.0695 4.16835 3.53572 3.82436 3.87937C3.48037 4.22301 3.01396 4.41593 2.52773 4.41569C2.0415 4.41545 1.57528 4.22206 1.23164 3.87807C0.887991 3.53408 0.69507 3.06767 0.695313 2.58144C0.695556 2.09521 0.888943 1.62899 1.23293 1.28535C1.57692 0.941701 2.04333 0.748781 2.52956 0.749024C3.01579 0.749267 3.48201 0.942654 3.82566 1.28664C4.1693 1.63063 4.36222 2.09704 4.36198 2.58327ZM4.41698 5.77327H0.750313V17.2499H4.41698V5.77327ZM10.2103 5.77327H6.56198V17.2499H10.1736V11.2274C10.1736 7.87244 14.5461 7.56077 14.5461 11.2274V17.2499H18.167V9.98077C18.167 4.32494 11.6953 4.53577 10.1736 7.31327L10.2103 5.77327Z"
-                          fill=""
-                        ></path>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="c tc wf xf ie ld rg ml il tl">
-                      <svg
-                        class="th lm ml il"
-                        width="22"
-                        height="14"
-                        viewBox="0 0 22 14"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M6.82308 0.904297C7.40883 0.904297 7.95058 0.95013 8.44558 1.0858C8.89476 1.16834 9.32351 1.33772 9.70783 1.58446C10.069 1.81088 10.3394 2.12896 10.5191 2.53688C10.6997 2.9448 10.7895 3.44438 10.7895 3.98796C10.7895 4.62321 10.6547 5.1668 10.3394 5.57471C10.069 5.98355 9.61799 6.34563 9.07716 6.61788C9.84349 6.84521 10.4292 7.25313 10.7895 7.79672C11.1507 8.34122 11.3762 9.02138 11.3762 9.7923C11.3762 10.4275 11.2405 10.9711 11.015 11.4249C10.7895 11.8786 10.4292 12.2865 10.0232 12.5588C9.58205 12.8506 9.09443 13.0651 8.58124 13.1931C8.04041 13.3297 7.49958 13.4205 6.95874 13.4205H0.916992V0.904297H6.82308ZM6.46191 5.98263C6.95783 5.98263 7.36391 5.84696 7.67924 5.62055C7.99458 5.39413 8.13024 4.9853 8.13024 4.48663C8.13024 4.21438 8.08441 3.94213 7.99458 3.76155C7.90474 3.58005 7.76908 3.44346 7.58941 3.3078C7.40883 3.21705 7.22824 3.1263 7.00274 3.08138C6.77724 3.03555 6.55266 3.03555 6.28133 3.03555H3.66699V5.98355H6.46283L6.46191 5.98263ZM6.59758 11.3341C6.86799 11.3341 7.13841 11.2883 7.36391 11.2434C7.59159 11.2001 7.80692 11.1071 7.99458 10.9711C8.17826 10.8384 8.33193 10.6685 8.44558 10.4725C8.53541 10.246 8.62616 9.9738 8.62616 9.65663C8.62616 9.02138 8.44558 8.56763 8.08533 8.25046C7.72416 7.97822 7.22824 7.84255 6.64249 7.84255H3.66699V11.335H6.59758V11.3341ZM15.2986 11.2883C15.6588 11.6513 16.1997 11.8328 16.9211 11.8328C17.417 11.8328 17.868 11.6971 18.2282 11.4707C18.5894 11.1985 18.8149 10.9262 18.9047 10.654H21.1139C20.7527 11.742 20.2119 12.513 19.4914 13.0116C18.7691 13.4654 17.9129 13.7376 16.8762 13.7376C16.2128 13.7396 15.5551 13.6165 14.9374 13.3746C14.3816 13.1661 13.886 12.8235 13.4946 12.3773C13.0759 11.9598 12.7665 11.4457 12.5935 10.8804C12.368 10.291 12.2772 9.65663 12.2772 8.93063C12.2772 8.25047 12.368 7.61613 12.5935 7.0258C12.8103 6.45755 13.1311 5.93468 13.5395 5.48396C13.9456 5.07605 14.4415 4.71396 14.9823 4.48663C15.5843 4.24469 16.2274 4.12143 16.8762 4.12363C17.6425 4.12363 18.319 4.26021 18.9047 4.57738C19.4914 4.89455 19.9415 5.25755 20.3027 5.80205C20.6711 6.32503 20.9456 6.90819 21.1139 7.52538C21.2037 8.15972 21.2487 8.79497 21.2037 9.52005H14.667C14.667 10.246 14.9374 10.9262 15.2986 11.2892V11.2883ZM18.1384 6.52713C17.8231 6.20996 17.3272 6.02846 16.7405 6.02846C16.3353 6.02846 16.0191 6.11922 15.7487 6.25488C15.4782 6.39147 15.2986 6.57297 15.118 6.75447C14.952 6.92978 14.8422 7.15067 14.8027 7.3888C14.7568 7.61613 14.7119 7.79672 14.7119 7.97822H18.7691C18.6792 7.29805 18.4537 6.84522 18.1384 6.52713ZM14.1711 1.76596H19.2201V2.99063H14.172V1.76596H14.1711Z"
-                          fill=""
+                          d="M 26 2 C 13.308594 2 3 12.308594 3 25 C 3 37.691406 13.308594 48 26 48 C 35.917969 48 41.972656 43.4375 45.125 37.78125 C 48.277344 32.125 48.675781 25.480469 47.71875 20.9375 L 47.53125 20.15625 L 46.75 20.15625 L 26 20.125 L 25 20.125 L 25 30.53125 L 36.4375 30.53125 C 34.710938 34.53125 31.195313 37.28125 26 37.28125 C 19.210938 37.28125 13.71875 31.789063 13.71875 25 C 13.71875 18.210938 19.210938 12.71875 26 12.71875 C 29.050781 12.71875 31.820313 13.847656 33.96875 15.6875 L 34.6875 16.28125 L 41.53125 9.4375 L 42.25 8.6875 L 41.5 8 C 37.414063 4.277344 31.960938 2 26 2 Z M 26 4 C 31.074219 4 35.652344 5.855469 39.28125 8.84375 L 34.46875 13.65625 C 32.089844 11.878906 29.199219 10.71875 26 10.71875 C 18.128906 10.71875 11.71875 17.128906 11.71875 25 C 11.71875 32.871094 18.128906 39.28125 26 39.28125 C 32.550781 39.28125 37.261719 35.265625 38.9375 29.8125 L 39.34375 28.53125 L 27 28.53125 L 27 22.125 L 45.84375 22.15625 C 46.507813 26.191406 46.066406 31.984375 43.375 36.8125 C 40.515625 41.9375 35.320313 46 26 46 C 14.386719 46 5 36.609375 5 25 C 5 13.390625 14.386719 4 26 4 Z"
                         ></path>
                       </svg>
                     </a>
@@ -1113,7 +1110,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
         </div>
       </section>
 
-      <section class="i pg gh ji">
+      <!-- <section class="i pg gh ji">
         <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
         <div class="bb ye i z-10 ki xn dr">
           <div class="tc uf sn tn un gg">
@@ -1134,10 +1131,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="bb ze ki xn 2xl:ud-px-0">
         <div class="ji gp">
           <div class="tc uf ap gg fp">
@@ -1334,7 +1331,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <button
       class="xc wf xf ie ld vg sr gh tr g sa ta _a"
@@ -1365,39 +1362,55 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat 
 
           plans: [
             {
-              name: "Starter",
+              name: "Administrative",
               price: {
-                monthly: 29,
-                annually: 29 * 12 - 199,
+                monthly: 15,
+                annually: 15 * 8,
               },
               features: [
-                "400 GB Storaget",
-                "Unlimited Photos & Videos",
-                "Exclusive Support",
+                "Email/Calendar Management",
+                "SOP Development",
+                "Personal Research",
+                "Meeting Notes",
               ],
             },
             {
-              name: "Growth Plan",
+              name: "Voice Services",
               price: {
-                monthly: 59,
-                annually: 59 * 12 - 100,
+                monthly: 15,
+                annually: 15 * 8,
               },
               features: [
-                "400 GB Storaget",
-                "Unlimited Photos & Videos",
-                "Exclusive Support",
+                "Appointment Scheduling",
+                "Cold Calling",
+                "Inbound Support",
+                "Call Screening",
               ],
             },
             {
-              name: "Business",
+              name: "Prospecting",
               price: {
                 monthly: 139,
                 annually: 139 * 12 - 100,
               },
               features: [
-                "400 GB Storaget",
-                "Unlimited Photos & Videos",
-                "Exclusive Support",
+                "Social Media",
+                "Cold Calls",
+                "Cold Emails",
+                "Lead Scraping Prospecting",
+              ],
+            },
+            {
+              name: "CRM Support",
+              price: {
+                monthly: 139,
+                annually: 139 * 12 - 100,
+              },
+              features: [
+                "Database Management",
+                "Email Drip Campaigns",
+                "Database Clean Up",
+                "Lead Nurturing",
               ],
             },
           ],
